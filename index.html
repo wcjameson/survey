@@ -3,7 +3,7 @@
 <head>
   <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
   <link href="css/styles.css" rel="stylesheet" type="text/css">
-  <script src="js/jquery-3.5.1.js"></script>
+  <script src="js/jquery-3.6.0.js"></script>
   <script src="js/scripts.js"></script>
   <title>Survey</title>
 </head>
@@ -18,7 +18,7 @@
         <option>Water</option>
       </select>
 
-      <div class="radio">
+      <div class="radio" id="foods">
         <h2>What are your favorite foods?</h2>
         <label>
         <input type="radio" name="foods" value="tacos" checked>
@@ -38,27 +38,29 @@
         </label>
       </div>
 
-      <div class="form-group">
+      <div class="form-group" id="DOB">
         <h3>Whats your date of birth?</h3>
         <label for="born">Date of birth:</label>
         <input id="born" class="form-control" type="date">
       </div>
 
-      <div class="form-group">
+      <div class="form-group" id="color">
         <label for="color">What is your favorite color?</label>
-        <input id="color" class="form-control" type="color">
+        <input id="colors" class="form-control" type="color">
       </div>
 
       <button class="btn-light">Submit</button>
 
       <div class="output">
-
-
+        <span class="beverage"></span>
+        <span class="foods"></span>
+        <span class="DOB"></span>
+        <span class="color"></span>
       </div>
 
     </form>
   </div>
-
+    
 
 </body>
 </html>
